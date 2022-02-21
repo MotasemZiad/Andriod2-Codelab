@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvBroad"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Broadcast Receiver"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBattery"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="300dp"
+        android:gravity="center"
+        android:text="ACTION_BATTERY_LOW"
+        android:textColor="#000"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBroad" />
+
+    <TextView
+        android:id="@+id/tvPowerConnected"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="ACTION_POWER_CONNECTED"
+        android:textColor="#000"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBattery" />
+
+    <TextView
+        android:id="@+id/tvPowerDisconnected"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="ACTION_POWER_DISCONNECTED"
+        android:textColor="#000"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPowerConnected" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="80dp"
+        android:background="@drawable/btn_shape"
+        android:fontFamily="monospace"
+        android:padding="15dp"
+        android:text="Send Broadcast"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/tvPowerDisconnected"
+        app:layout_constraintStart_toStartOf="@id/tvPowerDisconnected"
+        app:layout_constraintTop_toBottomOf="@id/tvPowerDisconnected" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

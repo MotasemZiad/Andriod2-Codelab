@@ -1,0 +1,15 @@
+{
+  "id": 1,
+  "name": "Motasem Z. AbuNema",
+  "salary": 1500,
+  "email": "mnima2000@iugaza.edu.ps",
+  "courses": [
+    "ANDROID",
+    "KOTLIN",
+    "JAVA"
+  ],
+  "phone": {
+    "mobile": "0599838964",
+    "office": "082811040"
+  }
+}

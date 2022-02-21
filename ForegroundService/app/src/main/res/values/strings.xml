@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ForegroundService</string>
+    <string name="notification_msg">A foreground service performs some operation\n" +
+        "that is noticeable to the user.</string>
+</resources>
